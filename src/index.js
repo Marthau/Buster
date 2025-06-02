@@ -21,7 +21,11 @@ burgerMenuBtn.addEventListener('click', () => {
 
 headerLinks.forEach((link, i) => {
   link.addEventListener('click', () => {
-    if (!link.classList.contains('header__link_inactive') && !link.classList.contains('header__link_active')) {
+    if (
+      !link.classList.contains('header__link_inactive') 
+      && !link.classList.contains('header__link_active')
+      && !link.classList.contains('header__button')
+    ) {
       headerLinks.forEach(link => link.classList.remove('header__link_active'));
 
       hideMaps(i);
