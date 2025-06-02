@@ -1,0 +1,14 @@
+.hardware__decor-top {
+  background-image: url('../../../images/rave-logo-opacity.png');
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 11%;
+  width: 78%;
+  height: 167px;
+}
+
+@media screen and (max-width: 650px) {
+  .hardware__decor-top {
+    display: none;
+  }
+}

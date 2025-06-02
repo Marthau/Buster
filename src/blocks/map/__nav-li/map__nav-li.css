@@ -1,0 +1,16 @@
+.map__nav-li {
+  margin: 0;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 1280px) {
+  .map__nav-li {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map__nav-li {
+    padding: 10px 0;
+  }
+}

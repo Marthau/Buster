@@ -1,0 +1,11 @@
+.hardware__card-icon {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .hardware__card-icon {
+    width: 30px;
+  }
+}

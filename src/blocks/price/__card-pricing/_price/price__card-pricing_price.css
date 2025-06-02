@@ -1,0 +1,12 @@
+.price__card-pricing_price {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: flex-end;
+  font-weight: 900;
+}
+
+.price__card-pricing_price p {
+  margin: 0;
+  padding: 0;
+}

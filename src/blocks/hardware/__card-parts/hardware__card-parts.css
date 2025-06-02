@@ -1,0 +1,45 @@
+.hardware__card-parts {
+  margin: 0;
+  padding: 0 0 10px;
+  min-width: 435px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 60px;
+  border-bottom: 1px #AF1917 solid;
+}
+
+@media screen and (max-width: 1600px) {
+  .hardware__card-parts {
+    column-gap: 30px;
+    min-width: 415px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hardware__card-parts {
+    column-gap: 30px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__card-parts {
+    column-gap: 30px;
+    min-width: 390px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__card-parts {
+    column-gap: 30px;
+    min-width: 280px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hardware__card-parts {
+    column-gap: 10px;
+    min-width: 250px;
+  }
+}

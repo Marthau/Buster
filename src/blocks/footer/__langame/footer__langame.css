@@ -1,0 +1,12 @@
+@media screen and (max-width: 1000px) {
+  .footer__langame svg {
+    width: 175px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer__langame svg {
+    display: none;
+  }
+}

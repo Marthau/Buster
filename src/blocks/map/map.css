@@ -1,0 +1,200 @@
+.map {
+
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('../../images/texture-map.png');
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: absolute;
+  background-color: black;
+}
+
+.map_visible {
+  z-index: 4;
+}
+
+.map__pin {
+  margin-bottom: 60px;
+  background-color: #af1917;
+  position: absolute;
+  bottom: 100%;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  background-image: url('../../images/mask.png');
+  clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 95% 38%, 95% 52%, 100% 60%, 100% 85%, 90% 100%, 0% 100%);
+  max-width: 440px;  
+  width: 100vw;  
+  padding: 25px 15px 30px 65px;
+}
+
+
+.map__pin_toggled {
+  display: none;
+}
+
+.map__pin_disabled {
+  background-color: #878787;
+}
+
+.map__pin-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.map__pin-address {
+   margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+.map__pin-phone {
+   margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 42px;
+}
+
+.map__exit {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+}
+
+.map__exit:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .map__pin {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .map__pin {
+    padding: 12px 15px 15px 52px;
+  }
+
+  .map__pin-title {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .map__pin-address {
+    font-size: 12x;
+    margin-top: 10px;
+  }
+
+  .map__pin-phone {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .map__pin {
+    max-width: 260px;
+  }
+
+  .map__pin-title {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .map__pin-address {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  .map__pin-phone {
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .map__pin {
+    display: none; 
+    left: -140px;
+  }
+
+  .map__pin_toggled {
+    display: block;
+    /* width: 490px; */
+  }
+}
+
+ .map__pin::before {
+  content: url('../../images/decor-3.png');
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+
+@media screen and (max-width: 650px) {
+  .map__pin {
+    width: 380px;
+    padding-left: 24px;
+    left: -140px;
+  }
+
+  .map__pin::before {
+    content: url('../../images/decor-21.png');
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .map__pin {
+    width: 200px;
+    left: -110px;
+  }
+}
+
+/* @media screen and (max-width: 1600px) {
+  .map__pin {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .map__pin {
+    width: 290px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .map__pin {
+    width: 390px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .map__pin {
+    width: 280px;
+  }
+} */
+
+

@@ -1,0 +1,10 @@
+.header__btn-container {
+  display: flex;
+  column-gap: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__btn-container {
+    column-gap: 20px;
+  }
+}

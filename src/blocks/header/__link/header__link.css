@@ -1,0 +1,28 @@
+.header__link {
+  text-decoration: none;
+  color: #FFF;
+}
+
+.header__link:hover:not(.header__button) {
+  color: #AF1917;
+}
+
+.header__link_active:not(.header__button) {
+  color: #AF1917;
+}
+
+.header__link:hover {
+  cursor: pointer;
+}
+
+.header__link_active:hover:not(.header__button) {
+  cursor: auto;
+}
+ 
+@media screen and (max-width: 768px) {
+  .header__link {
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

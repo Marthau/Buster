@@ -1,0 +1,31 @@
+.photos__container {
+  padding-top: 70px;
+  padding-bottom: 130px;
+  max-width: 90%;
+  display: grid;
+
+  grid-auto-flow: dense;
+  gap: 40px;
+  grid-template-areas:
+    "a a b b b c c"
+    "a a e e e c c"
+    "d d e e e c c"
+    "d d e e e f f";
+}
+
+@media screen and (max-width: 1000px) {
+  .photos__container {
+    gap: 20px;
+    grid-template-areas:
+    "a a c c"
+    "b b b b"
+    "d d e e";
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .photos__container {
+    padding-top: 25px;
+    padding-bottom: 45px;
+  }
+}

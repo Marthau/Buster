@@ -1,0 +1,62 @@
+.hardware__card-container {
+  display: none;
+  position: relative;
+  padding-top: 75px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.hardware__card-container::before {
+  position: absolute;
+  content: url('../../../images/decor-19.png');
+  top: 75px;
+  right: -40px;
+}
+
+
+.hardware__card-container::after {
+  position: absolute;
+  content: url('../../../images/decor-18.png');
+  bottom: 0;
+  right: -130px;
+  height: 41px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__card-container {
+    justify-content: center;
+  }
+
+  .hardware__card-container::before {
+    display: none;
+  }
+
+  .hardware__card-container::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__card-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hardware__card-container {
+    row-gap: 20px;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hardware__card-container {
+    align-items: center;
+    max-width: 100%;
+  }
+}

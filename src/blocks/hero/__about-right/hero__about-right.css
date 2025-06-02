@@ -1,0 +1,17 @@
+@media screen and (max-width: 1600px) {
+  .hero__about-right {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__about-right {
+    height: 85px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__about-right {
+    display: none;
+  }
+}

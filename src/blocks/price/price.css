@@ -1,0 +1,32 @@
+.price {
+  position: relative;
+  overflow: hidden;
+}
+
+.price::before {
+  content: url('../../images/decor-5.png');
+  position: absolute;
+  top: -80px;
+  left: 0;
+}
+
+.price::after {
+  content: url('../../images/decor-7.png');
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .price::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .price::after {
+    display: block;
+    bottom: -35px;
+  }
+}

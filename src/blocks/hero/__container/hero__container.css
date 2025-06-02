@@ -1,0 +1,48 @@
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 150px;
+  padding-left: 150px;
+  max-width: 840px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1600px) {
+  .hero__container {
+    padding-left: 100px;
+    max-width: 630px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__container {
+    padding-left: 50px;
+    padding-top: 125px;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__container {
+    padding-left: 0;
+    padding-top: 40px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__container {
+    padding-top: 60px;
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero__container {
+    padding-top: 40px;
+  }
+}

@@ -1,0 +1,12 @@
+.price__card-pricing_time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: flex-start;
+  font-weight: 700;
+}
+
+.price__card-pricing_time p {
+  margin: 0;
+  padding: 0;
+}

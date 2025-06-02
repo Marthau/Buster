@@ -1,0 +1,124 @@
+.hero__heading {
+  margin: 0;
+  padding-bottom: 50px;
+  color: #FFF;
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero__heading span {
+  font-size: 88px;
+  color: #FFF;
+  position: relative;
+}
+
+.hero__heading span:nth-child(2) {
+  font-size: 88px;
+  color: transparent;
+  -webkit-text-stroke: 2px #FFF;
+  position: absolute;
+  left: 0;
+  transform: translate(-4px, 0);
+}
+
+@media screen and (max-width: 1600px) {
+  .hero__heading {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .hero__heading span {
+    font-size: 66px;
+    color: #FFF;
+    position: relative;
+  }
+
+  .hero__heading span:nth-child(2) {
+    font-size: 66px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFF;
+    position: absolute;
+    left: 0;
+    transform: translate(-4px, 0);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__heading {
+    font-size: 20px;
+  }
+
+  .hero__heading span {
+    font-size: 54px;
+    color: #FFF;
+    position: relative;
+  }
+
+  .hero__heading span:nth-child(2) {
+    font-size: 54px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFF;
+    position: absolute;
+    left: 0;
+    transform: translate(-4px, 0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__heading {
+    font-size: 19px;
+  }
+
+  .hero__heading span {
+    font-size: 52px;
+    color: #FFF;
+    position: relative;
+  }
+
+  .hero__heading span:nth-child(2) {
+    font-size: 52px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFF;
+    position: absolute;
+    left: 0;
+    transform: translate(-4px, 0);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .hero__heading {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .hero__heading span {
+    font-size: 48px;
+    color: #FFF;
+    position: relative;
+  }
+
+  .hero__heading span:nth-child(2) {
+    font-size: 48px;
+    color: transparent;
+    -webkit-text-stroke: 2px #FFF;
+    position: absolute;
+    left: 0;
+    transform: translate(-2px, 0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__heading {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .hero__heading span {
+    font-size: 36px;
+  }
+
+  .hero__heading span:nth-child(2) {
+    font-size: 36px;
+  }
+}

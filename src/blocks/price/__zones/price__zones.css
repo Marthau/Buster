@@ -1,0 +1,22 @@
+.price__zones {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .price__zones {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__zones {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .price__zones {
+    max-width: 320px;
+  }
+}

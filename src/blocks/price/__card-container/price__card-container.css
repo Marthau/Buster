@@ -1,0 +1,62 @@
+.price__card-container {
+  display: none;
+  position: relative;
+  padding-top: 75px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
+.price__card-container::before {
+  position: absolute;
+  content: url('../../../images/decor-15.png');
+  top: 75px;
+  right: -40px;
+}
+
+
+.price__card-container::after {
+  position: absolute;
+  content: url('../../../images/decor-14.png');
+  bottom: 0;
+  right: -130px;
+  height: 41px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+  .price__card-container {
+    justify-content: center;
+  }
+
+  .price__card-container::before {
+    display: none;
+  }
+
+  .price__card-container::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__card-container {
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: flex-start;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .price__card-container {
+    row-gap: 20px;
+    padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .price__card-container {
+    align-items: center;
+    max-width: 100%;
+  }
+}

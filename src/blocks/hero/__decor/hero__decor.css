@@ -1,0 +1,16 @@
+.hero__decor {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-image: url('../../../images/plenka-2.png');
+  mix-blend-mode: screen;
+  background-size: cover;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__decor {
+    background-position: 70%;
+  }
+}

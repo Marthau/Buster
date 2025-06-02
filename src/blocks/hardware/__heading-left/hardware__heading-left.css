@@ -1,0 +1,22 @@
+.hardware__heading-left {
+  position: absolute;
+  top: 252px;
+  left: 0;
+  width: 10%;
+  height: 41px;
+  background-image: url('../../../images/decor-17.png');
+  background-position-x: -40px;
+}
+
+@media screen and (max-width: 1600px) {
+  .hardware__heading-left {
+    height: 41px;
+    top: 245px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__heading-left {
+    display: none;
+  }
+}

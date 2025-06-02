@@ -1,0 +1,17 @@
+.hardware__container {
+  position: relative;
+  max-width: 90%;
+  padding-bottom: 175px;
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__container {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__container {
+    max-width: 100%;
+  }
+}

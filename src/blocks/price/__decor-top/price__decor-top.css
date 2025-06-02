@@ -1,0 +1,14 @@
+.price__decor-top {
+  background-image: url('../../../images/rave-logo-opacity.png');
+  position: absolute;
+  margin: 65px auto 0;
+  width: 1472px;
+  height: 167px;
+  left: 10%;
+}
+
+@media screen and (max-width: 650px) {
+  .price__decor-top {
+    display: none;
+  }
+}

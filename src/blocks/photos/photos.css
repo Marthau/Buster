@@ -1,0 +1,15 @@
+.photos {
+  position: relative;
+  max-width: 100%;
+  background-color: #FFF;
+}
+
+.photos::after {
+  content: url('../../images/decor-2.png');
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  overflow: hidden;
+  width: 100%
+}

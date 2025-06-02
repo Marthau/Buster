@@ -1,0 +1,111 @@
+.hero__button {
+  position: relative;
+  margin: 0;
+  color: #AF1917;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  transform: translateY(-20px);
+}
+
+.hero__button svg {
+  position: absolute;
+  left: -45px;
+  top: -15px;
+  height: 55px;
+  width: auto;
+  z-index: 1;
+}
+
+.hero__button:first-child svg {
+  left: -15px;
+}
+
+.hero__button span {
+  position: relative;
+  z-index: 2;
+}
+
+.hero__button:nth-child(2) {
+  margin: 0;
+  color: #FFF;
+  background-color: transparent;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  background-size: 100%;
+}
+
+@media screen and (max-width: 1600px) {
+  .hero__button {
+    font-size: 18px;
+    transform: translateY(-15px);
+  }
+
+  .hero__button:nth-child(2) {
+    font-size: 18px;
+    transform: translateY(-15px);
+    background-size: 100%;
+  }
+
+  .hero__button svg {
+    height: 46px;
+    left: -35px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hero__button {
+    font-size: 14px;
+    transform: translateY(-10px);
+  }
+
+  .hero__button:nth-child(2) {
+    font-size: 14px;
+    transform: translateY(-10px);
+  }
+
+  .hero__button svg {
+    height: 38px;
+    top: -12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero__button {
+    position: absolute;
+    bottom: -400px;
+    left: -100px;
+    font-size: 18px;
+    background-color: #FFF;
+    padding: 15px 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 10% 100%, 0% 80%);
+  }
+
+  .hero__button:nth-child(2) {
+    position: absolute;
+    bottom: -480px;
+    white-space: nowrap;
+    left: -80px;
+    font-size: 18px;
+    background-color: #AF1917;
+    padding: 15px 20px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 90% 100%, 10% 100%, 0% 80%);
+  }
+
+  .hero__button svg{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__button {
+    bottom: -400px;
+  }
+
+  .hero__button:nth-child(2) {
+    bottom: -470px;
+  }
+}

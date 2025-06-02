@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  padding: 5px 0;
+  max-width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #AF1917;
+  
+}
+
+.shit-pin {
+  display: none;
+}
+
+.neshit-pin {
+  display: none;
+}
+
+@media screen and (max-width: 650px) {
+  .footer {
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+}

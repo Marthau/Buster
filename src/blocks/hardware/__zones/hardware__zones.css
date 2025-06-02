@@ -1,0 +1,22 @@
+.hardware__zones {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__zones {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__zones {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hardware__zones {
+    max-width: 320px;
+  }
+}

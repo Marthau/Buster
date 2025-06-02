@@ -1,0 +1,28 @@
+.hardware__zones-list-item {
+  cursor: pointer;
+  padding: 20px 30px;
+  font-size: 28px;
+  font-weight: 500;
+  border: 1px #FFF solid;
+}
+
+@media screen and (max-width: 1600px) {
+  .hardware__zones-list-item {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__zones-list-item {
+    font-size: 15px;
+    padding: 15px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__zones-list-item {
+    font-size: 15px;
+    padding: 15px 15px;
+  }
+}

@@ -1,0 +1,20 @@
+.footer__logo {
+  display: flex;
+}
+
+.footer__logo img {
+  width: 100px;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer__logo img {
+    width: 85px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .footer__logo img {
+    display: none;
+  }
+}

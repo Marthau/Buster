@@ -1,0 +1,5 @@
+.hero__about-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}

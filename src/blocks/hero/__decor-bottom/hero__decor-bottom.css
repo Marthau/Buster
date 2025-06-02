@@ -1,0 +1,14 @@
+.hero__decor-bottom {
+  background-image: url('../../../images/decal-3.png');
+  height: 78px;
+  width: 770px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 1600px) {
+  .hero__decor-bottom {
+    display: none;
+  }
+}

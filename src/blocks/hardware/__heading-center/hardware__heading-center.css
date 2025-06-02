@@ -1,0 +1,24 @@
+.hardware__heading-center {
+  width: 178px;
+  height: 9px;
+  margin: 0 20px;
+  background-image: url('../../../images/decor-13.png');
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__heading-center {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__heading-center {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hardware__heading-center {
+    display: none;
+  }
+}

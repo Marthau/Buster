@@ -1,0 +1,17 @@
+.header__link_inactive {
+  text-decoration: none;
+  color: #525252;
+}
+
+.header__link_inactive:not(.header__button),
+.header__link_inactive:hover:not(.header__button) {
+  cursor: not-allowed;
+}
+
+.header__link_inactive:not(.header__button) {
+    color: #525252;
+}
+
+.header__link_inactive:hover:not(.header__button) {
+  color: #525252;
+}

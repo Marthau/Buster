@@ -1,0 +1,37 @@
+.hardware__card-left-name {
+  margin: 0;
+  padding: 0;
+  font-size: 28px;
+  font-weight: 400;
+  color: #AF1917;
+}
+
+@media screen and (max-width: 1600px) {
+  .hardware__card-left-name {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .hardware__card-left-name {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hardware__card-left-name {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__card-left-name {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hardware__card-left-name {
+    font-size: 16px;
+  }
+}

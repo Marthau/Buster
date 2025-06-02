@@ -1,0 +1,10 @@
+.price__decor-left {
+  background-image: url('../../../images/decor-4.png');
+  transform: scaleX(-1);
+  width: 433px;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  z-index: 1;
+}

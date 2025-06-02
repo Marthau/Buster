@@ -1,0 +1,17 @@
+.price__container {
+  position: relative;
+  max-width: 90%;
+  padding-bottom: 150px;
+}
+
+@media screen and (max-width: 1000px) {
+  .price__container {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__container {
+    max-width: 100%;
+  }
+}

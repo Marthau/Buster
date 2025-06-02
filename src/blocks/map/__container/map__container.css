@@ -1,0 +1,122 @@
+.map__container {
+  /* position: absolute; */
+  /* height: 850px; */
+  width: 90%;
+  margin: 0 auto;
+  padding: 40px 0;
+  /* clip-path: polygon(0% 100%, 60% 100%, 65% 90%, 82% 90%, 85% 85%, 100% 85%, 100% 0%, 0% 0%); */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .map__container {
+    margin-top: 90px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .map__container {
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .map__container {
+    clip-path: none;
+  }
+} */
+
+.map__menu-wrapper {
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  margin: 20px 0 0 20px;
+}
+
+.map__menu {
+  max-width: 340px;
+  padding: 30px 20px;
+  background-color:black;
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.map__menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.map__menu-item:hover{
+  cursor: pointer;
+}
+
+.map__menu-item-name{
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 760;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.map__menu-item-name_activated{
+  color: #AF1917;
+}
+
+.map__menu-item-adress{
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.map__menu-item-phone{
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.map__item-reservation{
+  position: relative;
+  margin: 0;
+  color: #AF1917;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  height: 55px;
+  display: block;
+  width: 252px;
+  overflow: hidden;
+}
+
+.map__item-reservation svg {
+  width: auto;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.map__item-reservation span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@media screen and (max-width: 1120px) {
+  .map__item-reservation {
+    height: 35px;
+    width: 200px;
+    font-size: 16px;
+  }
+}

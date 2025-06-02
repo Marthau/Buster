@@ -1,0 +1,36 @@
+.hardware {
+  position: relative;
+  background-color: #AF1917;
+  background-repeat: no-repeat;
+  background-image: url('../../images/texture-hardware.png');
+  background-blend-mode: soft-light;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.hardware::after {
+  content: url('../../images/decor-2.png');
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 25px;
+  overflow: hidden;
+}
+
+.hardware::before {
+  content: url('../../images/decor-8.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 108px;
+}
+
+@media screen and (max-width: 650px) {
+  .hardware::before {
+    display: none;
+  }
+
+  .hardware::after {
+    display: none;
+  }
+}

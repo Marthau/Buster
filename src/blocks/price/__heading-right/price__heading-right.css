@@ -1,0 +1,11 @@
+.price__heading-right {
+  width: 812px;
+  height: 41px;
+  background-image: url('../../../images/decor-12.png');
+}
+
+@media screen and (max-width: 768px) {
+  .price__heading-right {
+    display: none;
+  }
+}

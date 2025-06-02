@@ -1,0 +1,8 @@
+.hardware__decor-right {
+  background-image: url('../../../images/decor-4.png');
+  width: 433px;
+  height: 100%;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}

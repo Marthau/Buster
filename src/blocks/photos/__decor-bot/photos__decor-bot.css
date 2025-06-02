@@ -1,0 +1,14 @@
+.photos__decor-bot {
+  background-image: url('../../../images/decor-10.png');
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 575px;
+  height: 108px;
+}
+
+@media screen and (max-width: 1000px) {
+  .photos__decor-bot {
+    display: none;
+  }
+}

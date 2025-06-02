@@ -1,0 +1,13 @@
+.price__card-daytime-container {
+  margin: 0;
+  padding: 20px 0 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .price__card-daytime-container {
+    padding-top: 10px;
+  }
+}

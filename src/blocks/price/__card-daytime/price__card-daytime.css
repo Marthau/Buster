@@ -1,0 +1,31 @@
+.price__card-daytime {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 550px;
+}
+
+@media screen and (max-width: 1280px) {
+  .price__card-daytime{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .price__card-daytime{
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__card-daytime{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .price__card-daytime{
+    font-size: 15px;
+  }
+}

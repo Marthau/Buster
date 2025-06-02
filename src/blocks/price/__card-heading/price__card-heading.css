@@ -1,0 +1,30 @@
+.price__card-heading {
+  margin: 0;
+  padding: 0 0 10px;
+  font-size: 28px;
+  font-weight: 700;
+  border-bottom: 2px #AF1917 solid;
+  text-transform: uppercase;
+  ;
+}
+
+@media screen and (max-width: 1280px) {
+  .price__card-heading {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .price__card-heading {
+    font-size: 28px;
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__card-heading {
+    font-size: 18px;
+    padding-bottom: 0;
+  }
+}

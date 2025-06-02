@@ -1,0 +1,8 @@
+.hardware__decor-bottom {
+  position: absolute;
+  bottom: -565px;
+  right: 0;
+  background-image: url('../../../images/decor-20.png');
+  width: 910px;
+  height: 687px;
+}

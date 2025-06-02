@@ -1,0 +1,25 @@
+.price__heading {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 59px;
+}
+
+@media screen and (max-width: 1600px) {
+  .price__heading {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .price__heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .price__heading {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,12 @@
+.price__card-pricing_period {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: center;
+  font-weight: 400;
+}
+
+.price__card-pricing_period p {
+  margin: 0;
+  padding: 0;
+}

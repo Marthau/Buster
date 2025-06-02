@@ -1,0 +1,11 @@
+.hardware__heading-right {
+  width: 812px;
+  height: 41px;
+  background-image: url('../../../images/decor-16.png');
+}
+
+@media screen and (max-width: 768px) {
+  .hardware__heading-right {
+    display: none;
+  }
+}
