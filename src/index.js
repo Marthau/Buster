@@ -108,10 +108,10 @@ const ALEKSEEVSKAYA = {
 
 const POKROVKA = {
     coordinates: [37.647181, 55.759714],
-    iconSrc: '.neshit-pin',
+    iconSrc: '.shit-pin',
     title: 'Rave by Buster<br>Покровка',
     address: 'Москва, ул. Покровка, 21-23/25С1',
-    phone: 'Скоро открытие',
+    phone: '<a class="map__menu-tel" href="tel:+79933401903">+7 (993) 340-19-03</a>'
 };
 
 const AVIAMOTORNAYA = {
