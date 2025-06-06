@@ -7,7 +7,7 @@ module.exports = {
   entry: { main: './src/index.js' },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js',
+    filename: 'main[hash].js',
         publicPath: ''
   },
   mode: 'development',
@@ -42,6 +42,8 @@ module.exports = {
     template: './src/index.html'
   }),
   new CleanWebpackPlugin(),
-  new MiniCssExtractPlugin()
+  new MiniCssExtractPlugin({
+    filename: '[name][hash].css'
+  })
   ]
 }
