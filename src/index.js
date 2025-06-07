@@ -116,10 +116,10 @@ const POKROVKA = {
 
 const AVIAMOTORNAYA = {
     coordinates: [37.716521, 55.753458],
-    iconSrc: '.neshit-pin',
+    iconSrc: '.shit-pin',
     title: 'Rave by Buster<br>Авиамоторная',
     address: 'Москва, Ул. Авиамоторная, д.41б',
-    phone: 'Скоро открытие',
+    phone: '<a class="map__menu-tel" href="tel:+79251212992">+7 (925) 121-29-92</a>',
 };
 
 const DEPOLESNAYA = {
