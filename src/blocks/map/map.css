@@ -82,6 +82,11 @@
   color: #FFFFFF;
 }
 
+.map__menu-tel_with-button {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
 .map__menu-tel:hover {
   color: #d1d1d1;
 }

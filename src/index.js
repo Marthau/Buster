@@ -97,13 +97,21 @@ function hideMaps(activeMap) {
   })
 }
 
+const callButton = `
+  <a class="map__item-reservation" target="_blank" rel="noopener" href="https://clck.ru/39iFYb">
+      <span>Забронировать</span>
+      <svg width="252" height="55" viewBox="0 0 252 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.05025 7.97221C0.7375 9.28496 0 11.0654 0 12.922V48C0 51.866 3.13401 55 7 55H233.101C234.957 55 236.738 54.2625 238.05 52.9497L249.95 41.0503C251.263 39.7375 252 37.957 252 36.1005V7C252 3.13401 248.866 0 245 0H12.922C11.0654 0 9.28496 0.737498 7.97221 2.05025L2.05025 7.97221Z" fill="white"/></svg>
+    </a>
+`;
+
 
 const ALEKSEEVSKAYA = {
     coordinates: [37.635422, 55.807602],
     iconSrc: '.shit-pin',
     title: 'Rave by Buster<br>Алексеевская',
     address: 'Москва, просп. Мира, 95',
-    phone: '<a class="map__item-reservation" target="_blank" rel="noopener" href="https://clck.ru/39iFYb"><span>Забронировать</span><svg width="252" height="55" viewBox="0 0 252 55" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.05025 7.97221C0.7375 9.28496 0 11.0654 0 12.922V48C0 51.866 3.13401 55 7 55H233.101C234.957 55 236.738 54.2625 238.05 52.9497L249.95 41.0503C251.263 39.7375 252 37.957 252 36.1005V7C252 3.13401 248.866 0 245 0H12.922C11.0654 0 9.28496 0.737498 7.97221 2.05025L2.05025 7.97221Z" fill="white"/></svg></a>',
+    phone: callButton,
 };
 
 const POKROVKA = {
@@ -111,7 +119,12 @@ const POKROVKA = {
     iconSrc: '.shit-pin',
     title: 'Rave by Buster<br>Покровка',
     address: 'Москва, ул. Покровка, 21-23/25С1',
-    phone: '<a class="map__menu-tel" href="tel:+79933401903">+7 (993) 340-19-03</a>'
+    phone: `
+      <div class="map__menu-nav">
+        <a class="map__menu-tel map__menu-tel_with-button" href="tel:+79933401903">+7 (993) 340-19-03</a>
+        ${callButton}
+      </div>
+    `,
 };
 
 const AVIAMOTORNAYA = {
@@ -119,7 +132,12 @@ const AVIAMOTORNAYA = {
     iconSrc: '.shit-pin',
     title: 'Rave by Buster<br>Авиамоторная',
     address: 'Москва, Ул. Авиамоторная, д.41б',
-    phone: '<a class="map__menu-tel" href="tel:+79251212992">+7 (925) 121-29-92</a>',
+    phone: `
+      <div class="map__menu-nav">
+        <a class="map__menu-tel map__menu-tel_with-button" href="tel:+79251212992">+7 (925) 121-29-92</a>
+        ${callButton}
+      </div>
+    `,
 };
 
 const DEPOLESNAYA = {
@@ -128,6 +146,12 @@ const DEPOLESNAYA = {
     title: 'Rave by Buster<br>Депо-Лесная',
     address: 'Москва, Лесная улица, 20с1',
     phone: 'Скоро открытие',
+    // phone: `
+    //   <div class="map__menu-nav">
+    //     <a class="map__menu-tel" href="tel:+79933401903">+7 (993) 340-19-03</a>
+    //     ${callButton}
+    //   </div>
+    // `,
 };
 
 const mapProps = [
