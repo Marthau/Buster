@@ -13,10 +13,12 @@ const sideMenuLinks = document.querySelectorAll('.map__menu-item');
 const maps = document.querySelectorAll('.map');
 const mapExit = document.querySelectorAll('.map__exit');
 
-burgerMenuBtn.addEventListener('click', () => {
-  hideMaps(4);
+const MAPS_COUNT = document.querySelectorAll('.map').length - 1;
 
-  maps[4].classList.toggle('map_visible');
+burgerMenuBtn.addEventListener('click', () => {
+  hideMaps(MAPS_COUNT);
+
+  maps[MAPS_COUNT].classList.toggle('map_visible');
 });
 
 headerLinks.forEach((link, i) => {
@@ -39,7 +41,7 @@ headerLinks.forEach((link, i) => {
 });
 
 sideMenuLinks.forEach((link, i) => {
-  const numberToMapId = i % 4;
+  const numberToMapId = i % MAPS_COUNT;
   link.addEventListener('click', () => {
     if (!headerLinks[numberToMapId].classList.contains('header__link_active')) {
       headerLinks.forEach(link => link.classList.remove('header__link_active'));
@@ -142,16 +144,27 @@ const AVIAMOTORNAYA = {
 
 const DEPOLESNAYA = {
     coordinates: [37.592132, 55.780522],
-    iconSrc: '.neshit-pin',
+    iconSrc: '.shit-pin',
     title: 'Rave by Buster<br>Депо-Лесная',
     address: 'Москва, Лесная улица, 20с1',
-    phone: 'Скоро открытие',
-    // phone: `
-    //   <div class="map__menu-nav">
-    //     <a class="map__menu-tel" href="tel:+79933401903">+7 (993) 340-19-03</a>
-    //     ${callButton}
-    //   </div>
-    // `,
+    phone: `
+      <div class="map__menu-nav">
+        <a class="map__menu-tel map__menu-tel_with-button" href="tel:+79167365027">+7 (916) 736-50-27</a>
+        ${callButton}
+      </div>
+    `
+};
+
+const SOVETSKAYA = {
+    coordinates: [82.910741, 55.047816],
+    iconSrc: '.neshit-pin',
+    title: 'Rave by Buster<br>Советская',
+    address: 'Новосибирск, ул. Советская 101',
+    phone: `
+      <div class="map__menu-nav">
+        <a class="map__menu-tel map__menu-tel_with-button">Открытие 29 августа</a>
+      </div>
+    `
 };
 
 const mapProps = [
@@ -184,10 +197,17 @@ const mapProps = [
     }
   },
   {
-    markerProps: [ALEKSEEVSKAYA, POKROVKA, AVIAMOTORNAYA, DEPOLESNAYA].map(elem => ({...elem, clickable: true})),
+    markerProps: [SOVETSKAYA],
     location: {
-        center: [37.665578, 55.781191],
-        zoom: 10.5
+        center: [82.910741, 55.047816],
+        zoom: 18
+    },
+  },
+  {
+    markerProps: [ALEKSEEVSKAYA, POKROVKA, AVIAMOTORNAYA, DEPOLESNAYA, SOVETSKAYA].map(elem => ({...elem, clickable: true})),
+    location: {
+        center: [57.665578, 55.781191],
+        zoom: 3.88
     }
   },
 ]
