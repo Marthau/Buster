@@ -155,14 +155,14 @@ const DEPOLESNAYA = {
     `
 };
 
-const SOVETSKAYA = {
+const NOVOSIBIRSK = {
     coordinates: [82.910741, 55.047816],
     iconSrc: '.neshit-pin',
-    title: 'Rave by Buster<br>Советская',
-    address: 'Новосибирск, ул. Советская 101',
+    title: 'Rave by Buster<br>Новосибирск',
+    address: 'Новосибирск, ул. Железнодорожная, 22',
     phone: `
       <div class="map__menu-nav">
-        <a class="map__menu-tel map__menu-tel_with-button">Открытие 29 августа</a>
+        <a class="map__menu-tel map__menu-tel_with-button" href="tel:+79230000322">+7 (923) 000-03-22</a>
       </div>
     `
 };
@@ -197,14 +197,14 @@ const mapProps = [
     }
   },
   {
-    markerProps: [SOVETSKAYA],
+    markerProps: [NOVOSIBIRSK],
     location: {
-        center: [82.910741, 55.047816],
+        center: [82.91011, 55.047616],
         zoom: 18
     },
   },
   {
-    markerProps: [ALEKSEEVSKAYA, POKROVKA, AVIAMOTORNAYA, DEPOLESNAYA, SOVETSKAYA].map(elem => ({...elem, clickable: true})),
+    markerProps: [ALEKSEEVSKAYA, POKROVKA, AVIAMOTORNAYA, DEPOLESNAYA, NOVOSIBIRSK].map(elem => ({...elem, clickable: true})),
     location: {
         center: [57.665578, 55.781191],
         zoom: 3.88
